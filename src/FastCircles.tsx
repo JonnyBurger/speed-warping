@@ -6,7 +6,10 @@ export const FastCircles = () => {
 	const frame = useCurrentFrame();
 	const remappedFrame = remapSpeed({
 		frame,
-		speed: (fr) => interpolate(fr, [0, 400], [0.5, 2]),
+		speed: (fr) =>
+			interpolate(fr, [0, 400], [0.5, 4], {
+				extrapolateRight: 'clamp',
+			}),
 	});
 
 	return (
