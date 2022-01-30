@@ -1,7 +1,7 @@
 import {AbsoluteFill, Sequence} from 'remotion';
 import {Circle} from './Circle';
 
-export const MyComposition = () => {
+export const Circles = () => {
 	return (
 		<AbsoluteFill
 			style={{

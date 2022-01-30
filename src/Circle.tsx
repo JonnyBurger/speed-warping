@@ -5,7 +5,7 @@ export const Circle: React.FC<{
 	color: string;
 }> = ({color}) => {
 	const frame = useCurrentFrame();
-	const scale = interpolate(frame, [0, 100], [0, 5]);
+	const scale = interpolate(frame, [0, 200], [0, 5]);
 	return (
 		<AbsoluteFill
 			style={{
